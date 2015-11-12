@@ -163,10 +163,28 @@ a[href]:focus {
 a:active {
 	color: #000;
 }
+
 .logo a, h1 a, h2 a, h3 a {
 	border: none;
 }
-
+.logo a {
+	text-decoration: none;
+	white-space: pre-wrap;
+}
+.logo a:link {
+	color: #000;
+}
+.logo a:visited {
+	color: #000;
+}
+.logo a[href]:hover,
+.logo a[href]:focus {
+	color: #000;
+	background-color: none;
+}
+.logo a:active {
+	color: #000;
+}
 /* @end Links */
 
 /* @group Classes */
@@ -295,7 +313,8 @@ a:active {
 h2.centertext {
 	text-align: center;
 	position: absolute;
-	padding-top: 10%;
+	padding-top: 50%;
+	padding-left: 40%;
 }
 
 /* @end navigation */

@@ -235,11 +235,31 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
+/*a {
   color: #1EAEDB; }
 a:hover {
-  color: #0FA0CE; }
-
+  color: #0FA0CE; }*/
+a {
+  text-decoration: none;
+  white-space: pre-wrap;
+}
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a[href]:hover,
+a[href]:focus {
+  color: #000;
+  background-color: #99EDEA;
+}
+a:active {
+  color: #000;
+}
+.logo a, h1 a, h2 a, h3 a {
+  border: none;
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -502,6 +522,7 @@ there.
 .logo {
   float: right;
   position: relative;
+  z-index: 9999;
 }
 .newsfeed {
   display: block;
@@ -527,7 +548,7 @@ there.
 }
 
 .ball {
-    background: #fff;
+    background: #000;
     border-radius: 50%;
     position: absolute;
     top: 50%;
