@@ -246,7 +246,7 @@ a:active {
 	width: 100%;
 	} /*might be unnecessary */
 .news {
-	position: relative;
+	position: absolute;
 	float: center;
 	margin: 0 0 0 60%;
 	width:12.5em;
@@ -290,6 +290,12 @@ a:active {
 	float: left;
 	margin-left: 0px;
 	
+}
+
+h2.centertext {
+	text-align: center;
+	position: absolute;
+	padding-top: 10%;
 }
 
 /* @end navigation */
