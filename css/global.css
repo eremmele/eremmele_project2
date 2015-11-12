@@ -1,0 +1,449 @@
+/* @group Reset */
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, applet, object, iframe, svg,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	text-decoration: inherit;
+	text-align: left;
+	background: transparent;
+}
+header, footer, figure, details, hgroup,
+section, article, nav, aside {
+	display: block;
+}
+img, object, audio, video, svg {
+	max-width: 100%;
+}
+/* @end Reset */
+
+/* 2015 Erica Remmele */
+
+/* @group Typography */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Montserrat:700);
+
+html {
+	background-color: #fff;
+}
+body {
+	background-color: #fff;
+	background: rgba(255,255,255,1);
+	margin: 0 2.5%;
+	padding: 0 2.5%;
+	font-size: 100%;
+	line-height: 1.875;
+	font-family: 'Open Sans', sans-serif;;
+	color: #333;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	line-height: 0%;
+	max-height: 16%;
+	/*padding-top: 1em;
+	margin-bottom: 1em;*/
+	color: #1C1C1C;
+	text-transform: uppercase;
+	-webkit-text-stroke: .04em #1C1C1C;
+}
+.graphicdesign {
+	display: inline-block;
+	max-width: 7.696em;
+	max-height: 13.433em;
+	position: relative;
+	float: center;
+	z-index: 0;
+}
+#phic {
+	text-indent: 50%;
+}
+#de {
+	text-indent: 33%;
+}
+#i {
+	text-indent: 82%;
+}
+#gn {
+	text-indent: 33%;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.6em;
+	line-height: 0%;
+	max-height: 16%;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 9999;
+}
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.125em; /* 14pt */
+	line-height: 1.25;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0.813em; /* 10pt */
+	line-height: 1.25;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 0.813em;
+	line-height: 1.25;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+b, strong {
+	font-weight: 600;
+}
+i, em {
+	font-family: inherit;
+	font-style: 400italic;
+}
+hr {
+	border: none;
+	height: 0.1em;
+	background: #ccc;
+	background-color: rgba(0,0,0,0.2);
+}
+p, ul, ol, hr, table, form, fieldset {
+	/*margin: 1.25em 0;*/
+	line-height: 1.4;
+}
+li {
+	list-style-position: inside;
+	list-style-type: none;
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+/* @end Typography */
+
+/* @group Links */
+
+a {
+	text-decoration: none;
+	white-space: pre-wrap;
+}
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+a[href]:hover,
+a[href]:focus {
+	color: #000;
+	background-color: #99EDEA;
+}
+a:active {
+	color: #000;
+}
+.logo a, h1 a, h2 a, h3 a {
+	border: none;
+}
+
+/* @end Links */
+
+/* @group Classes */
+
+/* @group social */
+
+.social {
+	font-family: 'Open Sans', sans-serif;
+}
+.social li {
+	display: inline;
+	margin-left: 0;
+	text-indent: 0;
+}
+.social a {
+	display: inline-block;
+	padding: 1em;
+	line-height: 1;
+}
+.social a:link,
+.social a:visited {
+	color: #000;
+}
+.social a[href]:hover,
+.social a[href]:focus {
+	color: #000;
+	background-color: #99EDEA;
+}
+.social a:active {
+	color: #fff;
+	background-color: #B1EEEC;
+}
+
+/* @end social */
+
+/* @group newsfeed */
+
+.newsfeed {
+	background-color: #fff;
+	padding: 0.125em 1em;
+	margin: 1em 0;
+	/*border-top: 0.125em solid #cc9;
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	-o-border-radius: 0.25em;
+	border-radius: 0.25em;*/
+	background-clip: padding-box;
+}
+
+
+/* @end newsfeed */
+
+/* @navigation */
+
+#navimage a {
+	text-decoration: none;
+	white-space: pre-wrap;
+}
+#navimage a:link {
+	background-color: none;
+	text-decoration: none;
+}
+#navimage a:visited {
+	background-color: none;
+	text-decoration: none;
+}
+#navimage a[href]:hover,
+#navimage a[href]:focus {
+	background-color: none;
+	text-decoration: none;
+}
+#navimage a:active {
+	background-color: none;
+	text-decoration: none;
+}
+.navigation {
+	width: 100%;
+	} /*might be unnecessary */
+.news {
+	position: relative;
+	float: center;
+	margin: 0 0 0 60%;
+	width:12.5em;
+	height:12.5em;
+	z-index: 9998;
+}
+.people {
+	position: relative;
+	float: center;
+	margin: 0 0 0 30%;
+	width:12.5em;
+	height:12.5em;
+	z-index: 9997;
+}
+.resources {
+	position: relative;
+	float: center;
+	margin: 0 0 0 60%;
+	width:12.5em;
+	height:12.5em;
+	z-index: 9996;
+}
+.studentwork {
+	position: relative;
+	float: center;
+	margin: 0 0 0 45%;
+	width:12.5em;
+	height:12.5em;
+	z-index: 9995;
+}
+
+.home {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0.813em; /* 10pt */
+	line-height: 1.25;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+.homeplace {
+	float: left;
+	margin-left: 0px;
+	
+}
+
+/* @end navigation */
+
+/* @footer */
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: #fff;
+}
+#footer {
+    width: 100%;
+	height: 34.8px;
+    padding: 5px 0 25px;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    background-position: 0 0 0 -50px;
+    background: #1C1C1C;
+    z-index: 9999;
+}
+#footWrap.h6 {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 2em;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: #fff;
+}
+#footer ul li {
+	display: inline;
+}
+#footer a {
+	text-decoration: none;
+	white-space: pre-wrap;
+}
+#footer a:link {
+	color: #fff;
+}
+#footer a:visited {
+	color: #000;
+}
+#footer a[href]:hover,
+#footer a[href]:focus {
+	color: #000;
+	background-color: #99EDEA;
+}
+#footer a:active {
+	color: #000;
+}
+
+/* FOOTER: Search Form */
+
+#footer #searchform { 
+	float: left;
+	margin:0px 0 0 3px; 
+}
+
+#footer input#s {
+	width: 164px;
+	height: 18px;
+	padding: 8px 8px;
+	margin-right:0;
+	background: #FFF;
+	border: none;
+	/*box-shadow: none;
+	color:#999;
+	font-size:11px;
+	text-indent: 0px;
+	box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, .1);*/
+	text-transform: uppercase; 
+}
+	
+#footer input#s:focus {
+	box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, .3);
+	color: #333;
+	text-indent: 0;
+}
+.copyright {
+
+}
+
+
+/* @group search */
+
+/*[role="search"] {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 0 0.75em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius:1em;
+	-o-border-radius: 1em;
+	border-radius: 1em;
+}
+[role="search"] input {
+	border: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+[role="search"] input[type="image"] {
+	background-color: #fff;
+	position: absolute;
+	width: 0.9375em;
+	top: 0.2em;
+	right: 0.6em;
+	padding: 0.2em 0.2em;
+}*/
+/*input[type=search] {
+    -webkit-appearance: textfield;
+}​​​*/
+input {
+    -webkit-appearance: textfield;
+    padding: 1px;
+    background-color: white;
+    border: 2px inset;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+}
+user agent stylesheetinput, textarea, keygen, select, button {
+    margin: 0em;
+    font: 11px BlinkMacSystemFont;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+user agent stylesheetinput, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+
+/* @end search */
+
+/* @end footer */
+
+/* @end Classes */
