@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="author" content="Erica Remmele">
 <title>MICA GD Redesign Styleguide</title>
-<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" type="text/css" href="global.css">
 <style>
 html {
     background-color: #1C1C1C;
