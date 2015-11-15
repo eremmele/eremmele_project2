@@ -37,13 +37,19 @@ img, object, audio, video, svg {
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Montserrat:700);
 
+
+/* $rembase = 10px */
+/* $fontbase = 16 */
+/* $line-height-base = 26 */
+
 html {
 	background-color: #fff;
+	font-size: 16px, 100%;
 }
 body {
 	background-color: #fff;
 	background: rgba(255,255,255,1);
-	margin: 0 2.5%;
+	margin: 0 0 1rem 0;
 	padding: 0 2.5%;
 	font-size: 100%;
 	line-height: 1.875;
@@ -96,25 +102,25 @@ h2 {
 h3 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	font-size: 1.125em; /* 14pt */
-	line-height: 1.25;
-	letter-spacing: 0.18em;
+	font-size: 0.875rem; /* 14pt */
+	line-height: 1rem;
+	letter-spacing: 0.125rem;
 	text-transform: uppercase;
 }
 h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 0.813em; /* 10pt */
-	line-height: 1.25;
-	letter-spacing: 0.18em;
+	font-size: 0.625rem; /* 10pt */
+	line-height: 0.75rem;
+	letter-spacing: 0.125rem;
 	text-transform: uppercase;
 }
 h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 0.813em;
-	line-height: 1.25;
-	letter-spacing: 0.18em;
+	font-size: 0.625rem; /* 10pt */
+	line-height: 0.75rem;
+	letter-spacing: 0.125rem;
 	text-transform: uppercase;
 }
 b, strong {
@@ -132,7 +138,7 @@ hr {
 }
 p, ul, ol, hr, table, form, fieldset {
 	/*margin: 1.25em 0;*/
-	line-height: 1.4;
+	line-height: 1.2;
 }
 li {
 	list-style-position: inside;
@@ -343,35 +349,38 @@ h2.centertext {
 h6 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.25;
+	font-size: 0.75rem;
+	line-height: 1rem;
 	text-transform: uppercase;
 	color: #fff;
 }
+.copyright {
+	max-width: 24rem;
+}
 #footer {
-    width: 120%;
-	height: 34.8px;
-    padding: 5px 0 25px 0;
-    margin: 0 150% 0 -15%;
+    width: 121.8rem;
+	height: 3.48rem;
+    padding: 1.1rem 0 1.55rem 4.7rem;
+    margin: 0 0 0 -2.25rem;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     background: #1C1C1C;
     z-index: 9999;
 }
 #footWrap.h6 {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 10%;
-    padding-top: .5em;
+    max-width: 121.8rem;
     font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.25;
+	font-size: 0.75rem;
+	line-height: 1rem;
 	text-transform: uppercase;
 	color: #fff;
+	margin-top: 1.6875rem;
 }
 #footer ul li {
 	display: inline;
+	margin-top: 40%;
+	padding-right: 3rem;
 }
 #footer a {
 	text-decoration: none;
@@ -395,15 +404,17 @@ h6 {
 /* FOOTER: Search Form */
 
 #footer #searchform { 
-	float: left;
-	margin:0px 0 0 3px; 
+	margin-left: 0;
+	height: 1.6875rem;
+	width: 16.4rem;
+	/* margin:0px 0 0 3px; */
 }
 
 #footer input#s {
-	width: 164px;
-	height: 18px;
-	padding: 8px 8px;
-	margin-right:0;
+	width: 16.4rem; /*164px.. everything based on 10px scale*/
+	height: 1.6875rem;
+	padding: .8rem .8rem;
+	margin-right: 0;
 	background: #FFF;
 	border: none;
 	/*box-shadow: none;
@@ -418,9 +429,6 @@ h6 {
 	box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, .3);
 	color: #333;
 	text-indent: 0;
-}
-.copyright {
-
 }
 
 

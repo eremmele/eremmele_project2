@@ -524,7 +524,7 @@ there.
   position: relative;
   z-index: 9999;
 }
-.newsfeed {
+/*.newsfeed {
   display: block;
   width: 95%;
 }
