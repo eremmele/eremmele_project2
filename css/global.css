@@ -224,15 +224,35 @@ a:active {
 
 .newsfeed {
 	background-color: #fff;
-	padding: 0.125em 1em;
-	margin: 1em 0;
-	/*border-top: 0.125em solid #cc9;
-	-webkit-border-radius: 0.25em;
-	-moz-border-radius: 0.25em;
-	-o-border-radius: 0.25em;
-	border-radius: 0.25em;*/
+	padding: 2rem 0 2rem 2rem;
+	width: 90%;
 	background-clip: padding-box;
+	display: inline-block;
 }
+div.newsfeed {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+div.newsfeed {
+    -webkit-column-gap: 3%; /* Chrome, Safari, Opera */
+    -moz-column-gap: 3%; /* Firefox */
+    column-gap: 3%;
+}
+div.newsfeed {
+    -webkit-column-width: 33.33%; /* Chrome, Safari, Opera */
+    column-width: 33.33%;
+}
+div.newsfeed {
+    -webkit-column-break-inside:avoid;
+    -moz-column-break-inside:avoid;
+    -o-column-break-inside:avoid;
+    -ms-column-break-inside:avoid;
+    column-break-inside:avoid;
+}
+
+
+/*----scroll*/
 
 
 /* @end newsfeed */
@@ -269,7 +289,7 @@ a:active {
 	margin: 0 0 0 60%;
 	width:12.5em;
 	height:12.5em;
-	z-index: 9998;
+	z-index: 9990;
 }
 .people {
 	position: relative;
@@ -277,7 +297,7 @@ a:active {
 	margin: 0 0 0 30%;
 	width:12.5em;
 	height:12.5em;
-	z-index: 9997;
+	z-index: 9989;
 }
 .resources {
 	position: relative;
@@ -285,7 +305,7 @@ a:active {
 	margin: 0 0 0 60%;
 	width:12.5em;
 	height:12.5em;
-	z-index: 9996;
+	z-index: 9988;
 }
 .studentwork {
 	position: relative;
@@ -293,7 +313,7 @@ a:active {
 	margin: 0 0 0 45%;
 	width:12.5em;
 	height:12.5em;
-	z-index: 9995;
+	z-index: 9987;
 }
 
 .home {

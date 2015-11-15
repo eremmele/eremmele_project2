@@ -5,6 +5,8 @@
 <meta name="author" content="Erica Remmele">
 <title>MICA GD Redesign Styleguide</title>
 <link rel="stylesheet" type="text/css" href="global.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <style>
 html {
     background-color: #1C1C1C;
