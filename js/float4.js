@@ -18,10 +18,10 @@ function makeNewPosition(){
 
 function animateDiv(){
     var newq = makeNewPosition();
-    var oldq = $('.a').offset();
+    var oldq = $('.a4').offset();
     var speed = calcSpeed([oldq.top, oldq.left], newq);
     
-    $('.a').animate({ top: newq[0], left: newq[1] }, speed, function(){
+    $('.a4').animate({ top: newq[0], left: newq[1] }, speed, function(){
       animateDiv();        
     });
     

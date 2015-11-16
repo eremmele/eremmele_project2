@@ -52,15 +52,15 @@ body {
 	margin: 0 0 1rem 0;
 	padding: 0 2.5%;
 	font-size: 100%;
-	line-height: 1.875;
+	/*line-height: 1;*/
 	font-family: 'Open Sans', sans-serif;;
 	color: #333;
 }
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 2em;
-	line-height: 0%;
+	font-size: 2.5rem;
+	line-height: 0;
 	max-height: 16%;
 	/*padding-top: 1em;
 	margin-bottom: 1em;*/
@@ -68,13 +68,14 @@ h1 {
 	text-transform: uppercase;
 	-webkit-text-stroke: .04em #1C1C1C;
 }
+
 .graphicdesign {
 	display: inline-block;
-	max-width: 7.696em;
-	max-height: 13.433em;
-	position: relative;
+	max-width: 12.3rem; /*7.696em;*/
+	max-height: 21.49rem; /*13.433em;*/
 	float: center;
-	z-index: 0;
+	margin-top: -1000rem;
+	z-index: 9999;
 }
 #phic {
 	text-indent: 50%;
@@ -293,32 +294,32 @@ div.newsfeed {
 	position: absolute;
 	float: center;
 	margin: 0 0 0 60%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9990;
 }
 .people {
 	position: relative;
 	float: center;
 	margin: 0 0 0 30%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9989;
 }
 .resources {
 	position: relative;
 	float: center;
 	margin: 0 0 0 60%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9988;
 }
 .studentwork {
 	position: relative;
 	float: center;
 	margin: 0 0 0 45%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9987;
 }
 

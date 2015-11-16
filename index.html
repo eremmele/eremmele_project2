@@ -15,15 +15,17 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
+  <!-- CSS/JQUERY
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/global.css">
-  <script src="js/physics.js"></script>
+  <!--<script src="js/physics.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="js/float.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,32 +37,31 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+
+      <!-- MICA LOGO ––––––––––––––––––––––––––––––––-->
       <div class="logo">
         <a href="www.mica.edu"><img src="images/mica-logo.png" alt="MICA" style="width:5.658em;height:1.658em;"></a>
       </div>
 
-      <!--<div class="physics-area">
-    <div class="ball"></div>-->
+      <!-- NAVIGATION ––––––––––––––––––––––––––––––––-->
+    <ul id="navimage" class="navigation above-all-but-footer" style="margin-top:0">
+        <li>
+          <div class="a"><a href="http://micagraphicdesign.org/category/news/"><!--come back to this<h2 class="centertext">news</h2><img src="images/news_t.png" alt="news" style="width:16rem;height:16rem;">--></a></div>
+        </li>
+        <li>
+          <div class="a"><a href="http://micagraphicdesign.org/category/profiles/"><!-- come back <h2 class="centertext">people</h2><img src="images/people_t.png" alt="people" style="width:16rem;height:16rem;">--></a></div>
+        </li>
+        <li>
+          <div class="a"><a href="http://micagraphicdesign.org/resources/"><!-- come back<h2 class="centertext">resources</h2><img src="images/resources_t.png" alt="resources" style="width:16rem;height:16rem;">--></a></div>
+        </li>
+        <li>
+          <div class="a"><a href="http://www.micagraphicdesign.org"><!--come back<h2 class="centertext">student work</h2><img src="images/studentwork_t.png" alt="student work" style="width:16rem;height:16rem;">--></a></div>
+        </li>
+    </ul>
 
-             <ul id="navimage" class="navigation above-all-but-footer">
-        <li>
-          <div class="news"><a href="http://micagraphicdesign.org/category/news/"><h2 class="centertext">news</h2><img src="images/news.png" alt="news" style="width:12.5em;height:12.5em;"></a></div>
-        </li>
-        <li>
-          <div class="people"><a href="http://micagraphicdesign.org/category/profiles/"><h2 class="centertext">people</h2><img src="images/people.png" alt="people" style="width:12.5em;height:12.5em;"></a></div>
-        </li>
-        <li>
-          <div class="resources"><a href="http://micagraphicdesign.org/resources/"><h2 class="centertext">resources</h2><img src="images/resources.png" alt="resources" style="width:12.5em;height:12.5em;"></a></div>
-        </li>
-        <li>
-          <div class="studentwork"><a href="http://www.micagraphicdesign.org"><h2 class="centertext">student work</h2><img src="images/studentwork.png" alt="student work" style="width:12.5em;height:12.5em;"></a></div>
-        </li>
-      </ul>
-
-<!--</div>-->
-
-        <div class="row below-everything">
-          <div class="one-half column" style="margin-top: 0;margin-left: 50%">
+      <!-- GRAPHIC DESIGN ––––––––––––––––––––––––––––––––-->
+        <div class="below-everything">
+          <div class="one-half column" style="margin-left:45%">
             <div class="graphicdesign">
               <h1>
                 <p>GRA</p>

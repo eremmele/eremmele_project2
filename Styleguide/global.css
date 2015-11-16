@@ -383,35 +383,34 @@ div.newsfeed {
 	position: absolute;
 	float: center;
 	margin: 0 0 0 60%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9990;
 }
 .people {
 	position: relative;
 	float: center;
 	margin: 0 0 0 30%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9989;
 }
 .resources {
 	position: relative;
 	float: center;
 	margin: 0 0 0 60%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9988;
 }
 .studentwork {
 	position: relative;
 	float: center;
 	margin: 0 0 0 45%;
-	width:12.5em;
-	height:12.5em;
+	width:16rem;
+	height:16rem;
 	z-index: 9987;
 }
-
 .home {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
