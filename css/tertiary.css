@@ -471,21 +471,42 @@ there.
 
 /* my code 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.logo {
-  float: right;
-  position: relative;
+.columns {
+  background-color: #fff;
+  /*padding: 2rem 0 2rem 2rem;*/
+  width: 90%;
+  background-clip: padding-box;
+  display: inline-block;
 }
-.newsfeed {
-  display: block;
+div.columns {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
 }
-.newsfeed ul li {
-  display: inline;
+/*div.columns {
+    -webkit-column-gap: 5%; /* Chrome, Safari, Opera 
+    -moz-column-gap: 5%; /* Firefox 
+    column-gap: 5%;
 }
-.column1 .column2 .column3 {
-  display: block;
-  position: relative;
-  float: left;
-  width: 25%;
+/*div.columns {
+    -webkit-column-width: 33.33%; /* Chrome, Safari, Opera 
+    column-width: 33.33%;
+}*/
+div.columns {
+    -webkit-column-break-inside:avoid;
+    -moz-column-break-inside:avoid;
+    -o-column-break-inside:avoid;
+    -ms-column-break-inside:avoid;
+    column-break-inside:avoid;
 }
-
-
+.column1{
+  width: 12rem;
+  padding: 2rem 0 0 2rem;
+  margin-right: 1rem;
+}
+.column2{
+  width: 100rem;
+  margin-right: 100rem;
+  padding-top: 3rem;
+  padding-right: 50rem;
+}

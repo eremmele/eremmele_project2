@@ -330,11 +330,12 @@ div.newsfeed {
 	line-height: 1.25;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
+	padding-right: 3rem;
+	padding-bottom: 100rem;
 }
 .homeplace {
 	float: left;
 	margin-left: 0px;
-	
 }
 
 h2.centertext {
