@@ -19,18 +19,18 @@ function makeNewPosition(){
 function animateDiv(){
     var newq = makeNewPosition();
     var oldq = $('.a').offset(); $('.b').offset(); $('.c').offset(); $('.d').offset();
-    var speed = calcSpeed([oldq.top, oldq.left, oldq.right], newq);
+    var speed = calcSpeed([oldq.top, oldq.left, oldq.right, oldq.bottom], newq);
     
-    $('.a').animate({ top: newq[0], left: newq[1] }, speed, function(){
+    $('.a').animate({ top: newq[0], left: newq[0], bottom: [0] }, speed, function(){
       animateDiv();        
     });
-     $('.b').animate({ top: newq[1], left: newq[2] }, speed, function(){
+     $('.b').animate({ top: newq[1], left: newq[1], bottom: [0] }, speed, function(){
       animateDiv();        
     });
-      $('.c').animate({ top: newq[0], left: newq[3] }, speed, function(){
+      $('.c').animate({ top: newq[0], left: newq[2], bottom: [0] }, speed, function(){
       animateDiv();        
     });
-     $('.d').animate({ top: newq[1], left: newq[4] }, speed, function(){
+     $('.d').animate({ top: newq[1], left: newq[3], bottom: [0] }, speed, function(){
       animateDiv();        
     });
 };
