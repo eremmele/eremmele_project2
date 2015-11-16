@@ -13,6 +13,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -26,18 +30,15 @@
 </head>
 <body>
 
-  <!-- .container is main centered wrapper -->
-<div class="container">
-
-  <div class="row">
-    <div class="one-third column">
-    
-    <p class="home"><a href="http://micagraphicdesign.org/">Home</a></p>
-
-    </div>
-    <div class="two-thirds column">
-
-      <img src="images/mixtape.jpg" alt="The Mixed Feelings Playlist" style="width:462px;height:462px; padding-right:60rem; padding-top:1rem;">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="columns">
+          <section class="homeplace column1">
+          <!--<div class="homeplace">-->
+          <p class="home"><a href="http://micagraphicdesign.org/">Home</a></p>
+          </section>
+          <section class="column2">
+            <img src="images/mixtape.jpg" alt="The Mixed Feelings Playlist" style="width:462px;height:462px; padding-right:60rem;">
             <h3 style="padding-top:2rem">Mixed Feelings: Back2school</h3>
             <h5>9.21.15</h5>
               <br><h5><i>Contributed by Renan Machado, 
@@ -49,7 +50,7 @@
 
               <p>Be positive, and be strong. I believe in you and so do the B-52s.</p>
               <br>
-              <ul class="social" style="margin-left:-1rem">
+              <ul class="social">
                 <li><a href="https://twitter.com/MICA_GD"><img src="images/twitter.png" alt="twitter" style="width:25px;height:25px;"></a></li>
                 <li><a href="https://vimeo.com/micagd"><img src="images/vimeo.png" alt="vimeo" style="width:25px;height:25px;"></a></li>
                 <li><a href="http://micagraphicdesign.tumblr.com/"><img src="images/tumblr.png" alt="tumblr" style="width:25px;height:25px;"></a></li>
@@ -59,11 +60,24 @@
               </ul>
 
               <br><br><br><br><p>.</p>
+            </section>
+  </div>
 
-    </div>
-</div>
+      
 
-<!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+<!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="footer">
+    <div id="footWrap" class="h6">
+      <ul>
+        <li><a href="http://www.mica.edu" target="_blank" title="MICA.edu">MICA.edu</a></li>
+        <li><a href="http://micadesign.org/" target="_blank" title="GD MFA">GD MFA</a></li>
+        <li><a href="http://micagraphicdesignpb.org/" target="_blank" title="post-bac">Post-Bac GD</a></li>
+        <li><a href="mailto:bhorne@mica.edu?Subject=hey%20there%20MICA%20GD" target="_blank" title="Contact">Contact</a></li>
+        <li><p class="copyright">© Maryland Institute College of Art</p></li>
+      </ul>
+    </div><!-- #footWrap -->
+  </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
