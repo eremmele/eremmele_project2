@@ -204,6 +204,14 @@ a {
 a:hover {
   color: #0FA0CE; }
 
+  div.c {
+  z-index: 9998;
+  background-image: url(/images/resources.png);
+  background-size: 12.5em 12.5em;
+  background-repeat: no-repeat;
+  position:fixed; 
+}
+
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

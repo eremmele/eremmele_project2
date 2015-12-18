@@ -191,6 +191,10 @@ div.newsfeed {
   width: 100%;
 }
 
+li h3, li h4, li h5 {
+  text-indent: 0;
+}
+
 /* The element at the top of the page right after the fixed navigation bar
    MUST have sufficient top margin or else it will be covered by the bar */
 
