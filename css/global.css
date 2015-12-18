@@ -70,17 +70,25 @@ h1 {
 	float: center;
 	z-index: 0;
 }
-#phic {
-	text-indent: 50%;
+p#phic {
+	text-indent: 50px;
+	float: left;
 }
-#de {
-	text-indent: 33%;
+p#de {
+	text-indent: 35px;
+	float: left;
 }
-#i {
-	text-indent: 82%;
+p#s {
+	text-indent: 0;
+	float: left;
 }
-#gn {
-	text-indent: 33%;
+p#i {
+	text-indent: 73px;
+	float: left;
+}
+p#gn {
+	text-indent: 34px;
+	float: left;
 }
 
 h2 {
@@ -152,6 +160,13 @@ a {
 a:link {
 	color: #000;
 }
+.menu a, .menu p {
+	text-transform: uppercase;
+	font-size: .75rem;
+}
+.menu a:link {
+	color: #fff;
+}
 a:visited {
 	color: #000;
 }
@@ -165,6 +180,9 @@ a:active {
 }
 .logo a, h1 a, h2 a, h3 a {
 	border: none;
+	float: right;
+	margin-top: 1.5rem;
+	margin-right: -1rem;
 }
 
 /* @end Links */
@@ -246,9 +264,8 @@ a:active {
 	width: 100%;
 	} /*might be unnecessary */
 .news {
-	position: relative;
 	float: center;
-	margin: 0 0 0 60%;
+	margin: 0 0 0 0;
 	width:12.5em;
 	height:12.5em;
 	z-index: 9998;
@@ -256,7 +273,7 @@ a:active {
 .people {
 	position: relative;
 	float: center;
-	margin: 0 0 0 30%;
+	margin: 0 0 0 0;
 	width:12.5em;
 	height:12.5em;
 	z-index: 9997;
@@ -264,7 +281,7 @@ a:active {
 .resources {
 	position: relative;
 	float: center;
-	margin: 0 0 0 60%;
+	margin: 0 0 0 0;
 	width:12.5em;
 	height:12.5em;
 	z-index: 9996;
@@ -272,7 +289,7 @@ a:active {
 .studentwork {
 	position: relative;
 	float: center;
-	margin: 0 0 0 45%;
+	margin: 0 0 0 0;
 	width:12.5em;
 	height:12.5em;
 	z-index: 9995;

@@ -1,44 +1,35 @@
-var myActor = new ui.Actor({
-    onUpdate: function (output) {
-        console.log(output);
-    }
-});
-
-var foo = new ui.Simulate({
-    values: {
-        x: 100
-    }
-});
-
-myActor.start(fooTween);
-
-var ballActor = new ui.Actor('#ball');
-
-ballActor.start(foo);
-
-var foo = new ui.Track({
-    values: {
-        x: {}
-        // equivalent to
-        // x: { watch: 'x' }
-    }
-});
-
-$('body').on('mousedown touchstart', '#ball', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-
-    ballActor.start(foo, event);
-});
-
-$('body').on('mousedown touchstart', '#ball', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
+/$(document).ready(function(){
+    animateDiv();
     
-    ballActor.start(foo, event);
-
-    $('body').one('mouseup touchend', function () {
-        ballActor.stop();
-    });
 });
 
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    $('.a').animate({ top: newq[.2], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    $('.b').animate({ top: newq[0], right: newq[1] }, function(){
+      animateDiv();        
+    });
+    $('.c').animate({ bottom: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    $('.d').animate({ bottom: newq[0], right: newq[1] }, function(){
+      animateDiv();        
+    });
+
+    
+};
